@@ -1,0 +1,50 @@
+#wrapper {
+    position:absolute;
+    left:30%;
+    right:20%;
+    width:500px;
+    height:500px;
+    border: 1px solid purple;
+
+}
+
+#currentTime {
+    float: right;
+}
+
+#startTime {
+    background-color:purple;
+    margin: left 30%;
+    padding:15px 32px;
+    font-size: 20px;
+    color:white;
+}
+
+#questionsDiv {
+    margin: 20px;
+}
+
+#goBack {
+    background-color: purple;
+    position: relative;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    top: 30%;
+    left:55%;
+    width:auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+#clear{
+    background-color: purple;
+    position: relative;
+    padding: 10px;
+    font-size: 20px; 
+    color: white;
+    top: 30%;
+    right: 5%;
+    text-align: center;
+}
+
