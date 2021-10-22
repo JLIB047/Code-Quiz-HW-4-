@@ -26,10 +26,12 @@ var questions = [
         answer: "all of the above",
     }
 ]
+// possible variables 
+var score = 0;
+var questionCount = 0;
 
-for (var i = 0; i < questions; i++){
-    console.log(questions);
-}
+
+
 // start timer 
 // loop through array 
 // Penalize player for wrong answer 
