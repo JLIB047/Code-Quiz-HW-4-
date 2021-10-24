@@ -48,3 +48,48 @@
     text-align: center;
 }
 
+button {
+    border-radius: 8px;
+}
+
+textarea {
+    width: 90%;
+    margin: 20px;
+}
+
+#Submit {
+    background-color:purple;
+    margin-left:35%;
+    padding:15px 30px;
+    font-size:24px;
+    color:white;
+}
+
+#createDiv {
+    margin-top:20px;
+    border-top: 1px solid lightgray;
+}
+
+label {
+    margin-right: 10px;
+}
+input {
+    margin-bottom: 20px;
+    width: 50%;
+    border: 1px solid lightgray;
+}
+
+h1 {
+    text-align: center;
+}
+
+li {
+    background-color: purple;
+    margin-top: 10px;
+    padding: 5px 15px;
+    width: 80%;
+    font-size: 18px;
+    color: white;
+}
+
+/* add media queries 
