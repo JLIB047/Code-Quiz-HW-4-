@@ -10,3 +10,14 @@ The purpose of the project is to create a quix about what we've learned in the l
 - Web API's 
 
 ## Website Screen Shot w/ Link 
+![Alt text](assets/images/SS-CodeQuiz1.jpg)
+
+![Alt text](assets/images/SS-CodeQuiz2.jpg)
+
+![Alt text](assets/images/SS-CodeQuiz3.jpg)
+
+https://jlib047.github.io/Code-Quiz-HW-4-/index.html
+
+
+## Contribution 
+Created and designed by Jason Libertelli
