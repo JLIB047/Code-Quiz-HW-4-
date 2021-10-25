@@ -163,71 +163,33 @@ function allDone() {
 
     questionsDiv.appendChild(createSubmit);
 
-    createSubmit.addEventListener("click", function(){
+    // Event listener to capture initials and local storage for initials and score
+    createSubmit.addEventListener("click", function () {
         var initials = createInput.value;
 
-        if(initials === null) {
-            console.log("No value entered")
-        }
-        else {
+        if (initials === null) {
+
+            console.log("No value entered!");
+
+        } else {
             var finalScore = {
                 initials: initials,
-                score: timeRemaining 
+                score: timeRemaining
             }
-            console.log(finalScore)
+            console.log(finalScore);
             var allScores = localStorage.getItem("allScores");
-            if(allScores === null) {
+            if (allScores === null) {
                 allScores = [];
-            }
-            else {
+            } else {
                 allScores = JSON.parse(allScores);
             }
             allScores.push(finalScore);
             var newScore = JSON.stringify(allScores);
+            localStorage.setItem("allScores", newScore);
+            // Travels to final page
             window.location.replace("./highscore.html");
+            
         }
-    })
+    });
+
 }
-/* notes from tutor 
-const curTime = new Date();
-let cur_Sec = curTime.getSeconds();
-let cur_Min = curTime.getMinutes();
-console.log(cur_Min);
-console.log(cur_Sec);
-
-var cur_Tm = cur_Min + ":" + cur_Sec ;
-console.log(cur_Tm);
-*/
-
-/*function evalTime(dt) {
-    // this function takes in a time variable formatted as MM:SS 
-    // Evaluates what 75 seconds passed that variable is 
-    // then determines whether or not the current time is greater than or less than the current time
-    var time_Val = 75 ;
-    const curTime = new Date();
-    let cur_Sec = curTime.getSeconds();
-    let cur_Min = curTime.getMinutes();
-    var cur_Tm = cur_Min + ":" + cur_Sec ;
-
-    var currentDateObj = arguments.dt;
-    console.log(currentDateObj);
-    var numberOfMlSeconds = currentDateObj.getTime();
-    var addMlSeconds = time_Val * 60 * 1000;
-    var newDateObj = new Date(numberOfMlSeconds + addMlSeconds);
-    
-    if(cur_Tm > newDateObj){
-        return false;
-    } 
-    else (cur_Tm < newDateObj){
-        return true;
-    }
-    
-}
-*/
-// setInterval()
-
-// loop through array 
-//function 
-// Penalize player for wrong answer 
-// Game is over when timer hits zero or questions are answered
-// Save initials and score 
